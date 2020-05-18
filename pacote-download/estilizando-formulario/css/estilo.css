@@ -1,0 +1,68 @@
+/*
+Estilizando formulário
+*/
+body{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #5555A5 url(../imagens/fundo.jpg) no-repeat center top;
+}
+
+#container{
+    width: 400px;
+    height: 300px;
+    /*O último valor diz respeito a transparência, opacidade. Valor máximo é 1*/
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    margin-top: 120px;
+    text-align: center;
+    /*A propriedade border-radius, serve pra 
+    arredondar as bordas nos cantos*/
+
+    /*Por ser uma propriedade nova, pode acontecer que navegadores não a reconheçam*/
+    /*Por isso utilizamos Prefixos*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+#container img{
+    width: 120px;
+    height: 120px;
+    margin-top: -60px;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+
+input.email{
+    background-image: url(../imagens/interface.png);
+}
+
+input.senha{
+    background-image: url(../imagens/lock.png);
+}
+
+input.submit{
+    color: #fff;
+    /*Usado como garantia caso o linear-gradient não funcione*/
+    background-color: #5555A5;
+    border: 2px solid #3B3BF0;
+    padding: 5px 20px;
+    height: 45px;
+    width: 90%;
+
+    /*Novamente por ser uma propriedade nova, devemos usar prefixos.*/
+    background: -webkit-linear-gradient(to  bottom, #6A6AEC, #0303D3);
+    background: -moz-linear-gradient(to  bottom, #6A6AEC, #0303D3);
+    background: -o-linear-gradient(to  bottom, #6A6AEC, #0303D3);
+    background: linear-gradient(to bottom, #6A6AEC, #0303D3);
+}
